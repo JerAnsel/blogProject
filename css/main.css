@@ -1,25 +1,14 @@
-/* This is the stylesheet for the template of the general structure used for each page*/
-
-*{
-    border: solid 2px blue;
-}
-.logo{
-    display: flex;
-    width: 50px;
-    height: 50px;
-}
 
 .navbar{
     display: flex;
     justify-content: space-between;
-    list-style: none;
-    border: solid 2px red;
+    /* border: turquoise solid 2px; */
+    margin-left: 20px;
+    margin-top: 20px;
 }
-.navlinks{
-    align-self: auto;
+.navbar a{
+    padding-left: 30px;
 }
-.navlinks li{
-    display: inline-block;
-    list-style: none;
+a {
+    text-decoration: none;
 }
-
