@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* border: turquoise solid 2px; */
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.navbar a{
+    padding-left: 30px;
+}
+a {
+    text-decoration: none;
+}
