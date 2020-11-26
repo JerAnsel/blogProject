@@ -1,0 +1,40 @@
+@import "template.css";
+
+.navBar{
+    grid-area: nav;
+    display: flex;
+    padding-right: 30px;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom : black solid 1px;
+    /* margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px; */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.navBar a{
+    padding-left: 30px;
+    font-weight: 800;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.subscribe{
+    border: white solid 1px;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px !important;
+}
+
+.footer{
+    grid-area: footer;
+    align-items: center;
+    background-color: black;
+}

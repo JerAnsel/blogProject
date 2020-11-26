@@ -1,0 +1,34 @@
+@import "template.css";
+
+.homePage{
+    display: grid;
+    grid-template-rows: 450px 50px 600px 30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "head head head head"
+    "nav nav nav nav"
+    "sidebar content content ."
+    "footer footer footer footer";
+}
+
+.header{
+    grid-area: head;
+    background: url("../images/blindfolded.jpg") no-repeat center;
+    background-size: cover;
+    
+}
+
+.Welcome{
+    grid-area: content;
+    font-size: large;
+}
+
+.sideBar{
+    padding-top: 100px;
+    grid-area: sidebar;
+}
+
+.sideBar li{
+    list-style: none;
+    line-height: 1.5;
+}
