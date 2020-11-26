@@ -2,7 +2,7 @@
 
 .header{
     grid-area: head;
-    background: url("../images/blindfolded.jpg") no-repeat center;
+    background: url("../images/basketball.jpg") no-repeat center;
     background-size: cover;
     
 }

@@ -1,5 +1,16 @@
 @import "template.css";
 
+.pageContainer{
+    display: grid;
+    grid-template-rows: 450px 50px 1fr 30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "head head head head"
+    "nav nav nav nav"
+    "sidebar content content ."
+    "footer footer footer footer";
+}
+
 .navBar{
     grid-area: nav;
     display: flex;
@@ -33,6 +44,21 @@ a {
     padding: 5px 5px 5px 5px !important;
 }
 
+.content{
+    grid-area: content;
+    font-size: large;
+    padding-top: 50px;
+}
+
+.sideBar{
+    padding-top: 100px;
+    grid-area: sidebar;
+}
+
+.sideBar li{
+    list-style: none;
+    line-height: 1.5;
+}
 .footer{
     grid-area: footer;
     align-items: center;
