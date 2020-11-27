@@ -1,0 +1,8 @@
+@import "template.css";
+
+.header{
+    grid-area: head;
+    background: url("../images/mirror.jpg") no-repeat center;
+    background-size: cover;
+    
+}
