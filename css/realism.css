@@ -1,8 +1,26 @@
 @import "template.css";
 
-.header{
+.header {
     grid-area: head;
-    background: url("../images/realism.jpeg") no-repeat center;
+    background: url("../images/realismSmall.jpg") no-repeat center;
     background-size: cover;
     
+}
+
+@media(min-width:700px) and (max-width:930px){
+    .header {
+        grid-area: head;
+        background: url("../images/realismMedium.jpeg") no-repeat center;
+        background-size: cover;
+        
+    }
+}
+
+@media(min-width:930px){
+    .header {
+        grid-area: head;
+        background: url("../images/realism.jpeg") no-repeat center;
+        background-size: cover;
+        
+    }
 }

@@ -1,8 +1,26 @@
 @import "template.css";
 
-.header{
+.header {
     grid-area: head;
-    background: url("../images/realWorld.jpg") no-repeat center;
-    background-size: cover;
-    
+    background-image: url("../images/morpheus.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;    
+}
+
+@media(min-width: 770px) and (max-width: 990px){
+    .header {
+        grid-area: head;
+        background: url("../images/morpheus.jpg") no-repeat center;
+        background-size: cover;
+        
+    }
+}
+
+@media(min-width: 990px){
+    .header {
+        grid-area: head;
+        background: url("../images/morpheus.jpg") no-repeat center;
+        background-size: cover;
+        
+    }
 }

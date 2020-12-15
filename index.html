@@ -3,20 +3,20 @@
     <head>
         <title>Home</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Motivational Blog Home Page">
+        <meta name="description" content="Motivational Blog Home">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
         <link href="css/home.css" rel="stylesheet">
     </head>
     
     <body>
         <div class="pageContainer">
             <div class="navBar">
-                <div class="subnav">
+                <div>
                     <a href="index.html">Home</a>
-                    <a href="About.html">About</a>
-                    <a href="Posts.html">Posts</a>
-                    <a href="Photos.html">Photos</a>
+                    <a href="posts/About.html">About</a>
+                    
                 </div>
-                <a class="subscribe" href="subscribe.html">Subscribe</a>
+                <a class="subscribe" href="#">Subscribe</a>
             </div>
             <div class="header">
             </div>
@@ -43,32 +43,62 @@
                 </ul>
             </div>
             <div class="content">
-                <h1>Open Your Eyes</h1>
-                <p>For time immemorial humanity have lived in group settings, in tribes, or families and eventually communities. And wherever there is a group, there are group beliefs. So, from the beginning of humanity as a race, there have been things that were accepted by individuals because they were the belief of the group as a whole.
-                    <br><br>
-                    That’s why we’re stuck in the place we are today.
-                    <br><br>
-                    As we evolved, people began to question widely held beliefs, whether they were based in science, religion, or even social norms. An individual questioned whether the earth was flat, and proved otherwise. An astronomer questioned the fact that the earth was the center of the universe, and proved that fact a myth.
-                    <br><br>
-                    But even though there are constantly those who challenge what everyone else accepts as a given, the vast majority of our world is still given to following what they have been told is true.
-                    <br><br>
-                    It’s easier that way.
-                    <br><br>
-                    In everything from your career path to your relationships with those around you, the life choices you make to your priorities, you’ve been taking everything as a given, instead of wondering if maybe the common perception is a MIS-conception.
-                    <br><br>
-                    We’ve been misled for way too long and with the way the world is changing, it is more important than ever to be informed about the way the world really is. It’s time to push the boundaries of what HAS been, and forge your way forward into what could be. Stop letting other people’s beliefs prevent you from fulfilling your dreams.
-                    <br><br>
-                    Take off your blindfold, open your eyes, and let me show you what’s really out there.
-                    <br><br>
-                </p>
+                <div class="welcome">
+                    <header>
+                        <h1>Open Your Eyes</h1>
+                        <p>The world is full of minsconceptions; commonly held beliefs that more often than not, hold us back from our full potential.
+                            <br><br>
+                            On top of that, each of us has come to accept things about ourselves over time that do just as much harm.
+                            <br><br>
+                            With a bit of humor and the occasional melodrama I'll do my best to open up your eyes to the way I see our wonderful world and the opportunities it holds.
+                            <br><br>
+                        </p>
+                    </header>
+                </div>
+                <ul aria-label="Posts">
+                    <li>
+                        <h2>Posts</h2>
+                    </li>
+                    <li class="card">
+                        <img src="images/basketball.jpg">
+                        <a href="posts/theSecretOfSports.html">
+                            <h3>The Secret Of Sports</h3>
+                            <span>Sports are about so much more than just play. Learn more from the game than you ever thought possible.</span>
+                        </a>
+                    </li>
+                    <li class="card">
+                        <img src="images/mirror.jpg">
+                        <a href="posts/mirrorMirror.html">
+                            <h3>Mirror, Mirror</h3>
+                            <span>The truth can hurt, but it can also help us grow.</span>
+                        </a>
+                    </li>
+                    <li class="card">
+                        <img src="images/realism.jpeg">
+                        <a href="posts/howToKillRealism.html">
+                            <h3>How to Kill Realism Before It Kills You</h3>
+                            <span>Stop realism from crushing your dreams.</span>
+                        </a>
+                    </li>
+                    <li class="card">
+                        <img src="images/realWorld.jpg">
+                        <a href="posts/welcomeToTheRealWorld.html">
+                            <h3>Welcome To The Real World</h3>
+                            <span>It's time to open your eyes and see the world for how it really is.</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="footer">  <!--Optional: add correct share links here once the site is up.-->
+            <footer class="footer">
+                <!--Optional: add correct share links here once the site is up.-->
                 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-                <script type="IN/Share" data-url="C:\Users\jerem\Documents\udacity\frontEnd\blogProject\template.html"></script>
-            </div>
+                <script type="IN/Share" data-url="https://jeransel.github.io/posts/index.html"></script>
+                <a class="FB" href="https://www.facebook.com/sharer/sharer.php?u=https://jeransel.github.io/posts/index.html" target="_blank" rel="noopener">
+                    Facebook
+                </a>
+            </footer>
         </div>
-
     </body>
 </html>

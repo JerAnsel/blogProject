@@ -1,0 +1,40 @@
+
+.navBar {
+    grid-area: nav;
+    display: flex;
+    padding-right: 30px;
+    justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom : black solid 1px;
+    /* margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px; */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.navBar a {
+    padding-left: 30px;
+    font-weight: 800;
+    color: white;
+}
+
+.navBar a:hover {
+    padding-left: 30px;
+    font-weight: 800;
+    color: gray;
+}
+
+.navBar a:active {
+    padding-left: 30px;
+    font-weight: 800;
+    color: blue;
+}
+
+.subscribe {
+    border: white solid 1px;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px !important;
+}

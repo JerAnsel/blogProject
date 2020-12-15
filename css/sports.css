@@ -1,6 +1,6 @@
 @import "template.css";
 
-.header{
+.header {
     grid-area: head;
     background: url("../images/basketball.jpg") no-repeat center;
     background-size: cover;

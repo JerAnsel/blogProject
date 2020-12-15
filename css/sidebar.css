@@ -1,0 +1,64 @@
+
+.sideBar {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    grid-area: sidebar;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sideBar li {
+    list-style: none;
+    line-height: 1.5;
+    padding-right: 15px;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.sideBar li span{
+    font-size: 18px;
+}
+
+.sideBar ul::before {
+    content: attr(aria-label);
+    font-size: 1.3em;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.sideBar li h3 {
+    margin-bottom: 0;
+}
+
+@media(min-width:770px) and (max-width:990px){
+
+    .sideBar {
+        padding-top: 70px;
+        grid-area: sidebar;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .sideBar ul {
+        padding-inline-start: 30px;
+    }
+
+    .sideBar li span{
+        font-size: 14px;
+    }
+}
+
+@media(min-width:990px){
+
+    .sideBar {
+        padding-top: 70px;
+        grid-area: sidebar;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .sideBar ul {
+        padding-inline-start: 30px;
+    }
+
+    .sideBar li span{
+        font-size: 14px;
+    }
+}

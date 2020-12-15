@@ -1,80 +1,47 @@
-@import "template.css";
+@import "footer.css";
+@import "navbar.css";
+@import "content.css";
+@import "sidebar.css";
 
-.pageContainer{
-    display: grid;
-    grid-template-rows: 450px 50px 1fr 30px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas: 
-    "head head head head"
-    "nav nav nav nav"
-    "sidebar content content ."
-    "footer footer footer footer";
-}
-
-.navBar{
-    grid-area: nav;
-    display: flex;
-    padding-right: 30px;
-    justify-content: space-between;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-bottom : black solid 1px;
-    /* margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px; */
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: black;
-}
-
-.navBar a{
-    padding-left: 30px;
-    font-weight: 800;
-    color: white;
-}
-
-a {
+a  {
     text-decoration: none;
     color: black;
 }
 
-.subscribe{
-    border: white solid 1px;
-    border-radius: 10px;
-    padding: 5px 5px 5px 5px !important;
+.pageContainer {
+    display: grid;
+    grid-template-rows: 450px 50px 2fr auto 30px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    "head head head head"
+    "nav nav nav nav"
+    "content content content content"
+    "sidebar sidebar sidebar sidebar"
+    "footer footer footer footer";
 }
 
-.content{
-    grid-area: content;
-    font-size: large;
-    padding-top: 50px;
+@media(min-width:770px) and (max-width:990px){
+    .pageContainer {
+        display: grid;
+        grid-template-rows: 450px 50px 1fr 30px;
+        grid-template-columns: repeat(5,1fr) 0.5fr;
+        grid-template-areas: 
+        "head head head head head head"
+        "nav nav nav nav nav nav"
+        "sidebar sidebar content content content ."
+        "footer footer footer footer footer footer";
+    }
 }
 
-.sideBar{
-    padding-top: 100px;
-    grid-area: sidebar;
-}
-.sideBar ul::before{
-    content: attr(aria-label);
-    font-size: 1.3em;
-    font-weight: 800;
-    text-decoration: underline;
-}
-
-.sideBar li{
-    list-style: none;
-    line-height: 1.5;
-    padding-right: 15px;
-    margin-top: 0px;
-    padding-bottom: 10px;
-}
-
-.sideBar li h3{
-    margin-bottom: 0px;
-}
-
-.footer{
-    grid-area: footer;
-    align-items: center;
-    background-color: black;
+@media(min-width:990px){
+    .pageContainer {
+        display: grid;
+        grid-template-rows: 450px 50px 1fr 30px;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-areas: 
+        "head head head head head head"
+        "nav nav nav nav nav nav"
+        "sidebar sidebar content content content ."
+        "footer footer footer footer footer footer";
+    }
 }
